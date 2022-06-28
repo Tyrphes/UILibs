@@ -156,7 +156,7 @@ local library = {
     pointers = {},
     settings = {
         guiname = "MMB",
-		title = "MBB [Exodus Edition]",
+		title = "MBB Counter Blox",
 		logo = "rbxassetid://4350178803", -- "http://www.roblox.com/asset/?id=6597976562",
         footer = " Exodus Winning $$$",
         modal = true,
