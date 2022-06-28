@@ -157,7 +157,7 @@ local library = {
     settings = {
         guiname = "MMB",
 		title = "MBB Counter Blox",
-		logo = "rbxassetid://4350178803", -- "http://www.roblox.com/asset/?id=6597976562",
+		logo = "",
         footer = " Exodus Winning $$$",
         modal = true,
         font = Enum.Font.SourceSans,
@@ -400,7 +400,14 @@ function library:CreateWindow(csize, cpos)
 		Visible = false,
 		Parent = self.base
 	})
-	
+	window.logo = self:create("ImageLabel", {
+		Size = UDim2.new(0,18,0,18),
+		Position = UDim2.new(0,8,0,2),
+		BackgroundTransparency = 1,
+		Name = "Logo",
+		Image = library.settings.logo,
+		Parent = window.main
+	})
 	window.main = self:create("TextButton", {
 		Position = UDim2.new(0,cpos.X,0,cpos.Y),
 		Size = UDim2.new(0,csize.X,0,csize.Y),
